@@ -12,3 +12,10 @@ const promise = new Promise((resolve, reject) => {
 });
 
 // Your solution(s) to exercise001 here!
+promise
+  .then(done => {
+	console.log("Yay! Promise resolved with response: "+done);
+  })
+  .catch(error => {
+   console.log("Boo. Promise rejected with response: "+error);
+  })
